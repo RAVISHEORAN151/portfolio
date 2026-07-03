@@ -1,4 +1,4 @@
-/* Reset default browser styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,16 +9,16 @@ header, footer {
   text-align: center;
 }
 
-/* Body styling */
+
 body {
   font-family: 'Pacifico', cursive;
   line-height: 1.6;
   background: #f5f5f5;
   color: #333;
-  padding: 0 20px;
+  padding: 0 23px;
 }
 
-/* Header */
+
 header {
   background: #2c3e50;
   color: #fff;
@@ -29,25 +29,26 @@ header {
 header a{
   color: #fff;
   list-style: none;
+  text-decoration: none;
 }
 header h1 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
+  margin-top: 50px ;
   margin-bottom: 10px;
-  font-size: 1.8rem;
 }
 
 header p {
-  font-size: 1.8rem;
+  font-size: 4.0rem;
   margin: 5px 0;
 }
 
-/* Sections */
+
 section {
   background: #fff;
   margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
-  max-width: 1000px;
+  max-width: 1700px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -58,64 +59,128 @@ section h3{
 
 section h2 {
   color: #2c3e50;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1px;
   border-bottom: 4px solid #2c3e50;
   padding-bottom: 5px;
 }
 
 section p {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 }
 
 /* Lists */
-ul {
-  list-style: none;
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-ul li {
-  margin: 10px 0;
+.nav-left, .nav-right {
+  display: flex;
+  flex-direction: column;   
+  gap: 15px;               
 }
 
-ul li a {
-  color: #fff;
+nav a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 45px;          
+  color: #2c3e50;
+  text-align: center;       
 }
 
-ul li a:hover {
-  text-decoration: underline;
+nav a:hover {
+  text-decoration: underline; 
 }
 
-/* Footer */
+a:hover{
+   text-decoration: underline; 
+}
+
+
 footer {
   text-align: center;
   padding: 15px;
-  margin-top: 20px;
+  margin-top: 40px;
   background: #2c3e50;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   border-radius: 8px;
 }
 
-/* Logos and project images circular */
-img.logo, img.project-img {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  margin-right: 10px;
-  color: #fff;
-}
 
-/* Intense Reverse Style (like your ON example) */
+
 .reverse {
-  color: #fff;              /* white text */
+  color: #fff;            
   font-weight: bold;
   text-transform: uppercase;
   padding: 10px 20px;
   border-radius: 6px;
   display: inline-block;
   letter-spacing: 2px;
+}
+
+.profile-img {
+  border-radius: 25%;
+  border: none;
+  box-shadow: 0 0 15px rgb(232, 232, 235), 0 0 30px rgb(250, 181, 222);
+}
+
+.education ul {
+  margin-top: 10px;
+  list-style: none;         
+  padding: 0;
+}
+
+.education a{
+  text-decoration: none;
+}
+
+.education li {
+  display: flex;            
+  align-items: center;      
+  margin-bottom: 20px;      
+  font-size: 18px;         
+  color: #2c3e50;           
+}
+
+.iitlogo, .logo {
+  display: block;
+  width: 100px;              
+  height: auto; 
+  margin-right: 15px;     
+}
+
+.project{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 40px;  
+}
+
+.project-img{
+  width: 120px;              
+  height: auto; 
+  margin-right: 15px; 
+
+}
+
+.project h3{
+  margin: 0;
+}
+
+.project p{
+   font-size: 18px;  
+   margin: 5px 0 0;     
+}
+
+.project a{
+  font-size: 20px;  
+  color: #2c3e50;        
+  text-decoration: none; 
+}
+
+.project a:hover{
+  text-decoration: underline; 
 }
