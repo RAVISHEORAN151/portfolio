@@ -1,41 +1,380 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Projects - Hemant Sheoran</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Ravi Kumar</title>
   <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-  <header>
-    <h1>Projects</h1>
-    <a href="index.html">← Back to Home</a>
-  </header>
+  <div class="site-shell">
+    <header class="page-header">
+      <a href="index.html" class="brand">
+        <span class="brand-symbol">&lt;/&gt;</span>
+        <span>ravi.dev</span>
+      </a>
 
-  <section class="projects">
-    <h2>Web Development Projects</h2>
-    <div class="project">
-      <img src="tictactoe.webp" alt="Tic Tac Toe Game" class="project-img">
-      <div>
-        <h3><a href="https://github.com/RAVISHEORAN151/tic-tac-toe">Tic Tac Toe Game</a></h3>
-        <p>Developed using HTML, CSS, and JavaScript. Implemented game logic for win/draw detection and restart functionality.</p>
-      </div>
-    </div>
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        type="button"
+        aria-label="Toggle dark mode"
+      >
+        <span id="themeIcon">☾</span>
+      </button>
+    </header>
 
-    <div class="project">
-      <img src="rockgame.png" alt="Rock Paper Scissors Game" class="project-img">
-      <div>
-        <h3><a href="file:///C:/Users/heman/OneDrive/Desktop/Rock%20paper%20sicssor/index.html">Rock Paper Scissors Game</a></h3>
-        <p>Interactive browser-based game built with HTML, CSS, and JavaScript. Includes random computer moves and dynamic score tracking.</p>
-      </div>
-      </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="about.html">About me</a>
+    </nav>
 
-     <div class="project">
-      <img src="currency-converter.png" alt="currency-converter-API" class="project-img">
-      <div>
-        <h3><a href="file:///C:/Users/heman/OneDrive/Desktop/API%20Project/index.html">CURRENCY CONVERTER API</a></h3>
-        <p><p>A simple web app that lets you convert currencies quickly using live exchange rates, built with HTML, CSS, and JavaScript.</p>
-      </div>
-      </div>
-  </section>
+    <main>
+      <section class="page-intro">
+        <p class="eyebrow">// selected_work</p>
+        <h1>Projects</h1>
+        <p>
+          A collection of applications built while learning web development,
+          programming, and practical problem solving.
+        </p>
+      </section>
+
+      <section class="project-toolbar">
+        <div>
+          <span class="project-count">07</span>
+          <span>projects documented</span>
+        </div>
+
+        <div class="project-filters">
+          <button class="filter-button active" data-filter="all">
+            All
+          </button>
+          <button class="filter-button" data-filter="web">
+            Web
+          </button>
+          <button class="filter-button" data-filter="javascript">
+            JavaScript
+          </button>
+          <button class="filter-button" data-filter="productivity">
+            Productivity
+          </button>
+        </div>
+      </section>
+
+      <section class="project-grid" aria-label="Portfolio projects">
+          <article class="project-card" data-category="javascript web">
+          <div class="project-banner">
+               <i class="fa-brands fa-slack"></i>
+
+              <div class="banner-text">
+                <h1 class="banner-title">Tic Tac Toe</h1>
+                <p class="banner-subtitle">THINK • PLAY • WIN</p>
+              </div>
+
+              <span class="project-number">01</span>
+            </div>
+
+         
+
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-type">JavaScript game</span>
+              <span class="project-status">completed</span>
+            </div>
+
+            <h2>Tic Tac Toe Game</h2>
+
+            <p>
+              Browser-based Tic Tac Toe game with win detection, draw
+              detection, turn handling, and restart functionality.
+            </p>
+
+            <div class="technology-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <a
+              href="https://github.com/RAVISHEORAN151/tic-tac-toe"
+              target="_blank"
+              class="project-link"
+            >
+              View source code →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="javascript web">
+          <div class="project-banner">
+            <div style="display: flex; gap: 0.1rem;">
+            <i class="fa-solid fa-hand-back-fist"></i>
+             <i class="fa-solid fa-hand"></i>
+              <i class="fa-solid fa-hand-scissors"></i>
+              </div>
+
+              <div class="banner-text">
+                <h1 class="banner-title">Rock Paper Scissors</h1>
+                <p class="banner-subtitle">PICK • CLASH • SCORE</p>
+              </div>
+
+              <span class="project-number">02</span>
+            </div>
+
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-type">JavaScript game</span>
+              <span class="project-status">completed</span>
+            </div>
+
+            <h2>Rock Paper Scissors</h2>
+
+            <p>
+              Interactive game with random computer moves, dynamic score
+              tracking, user input handling, and result feedback.
+            </p>
+
+            <div class="technology-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <a href="file:///C:/Users/heman/OneDrive/Desktop/Rock%20paper%20sicssor/index.html" class="project-link">
+              Add live demo →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="javascript web">
+           <div class="project-banner">
+              <div style="display: flex; gap: 0.3rem;">
+           <i class="fa-solid fa-dollar-sign"></i>
+           <i class="fa-solid fa-arrows-rotate"></i>
+             <i class="fa-solid fa-indian-rupee-sign"></i>
+              </div>
+
+              <div class="banner-text">
+                <h1 class="banner-title">Currency Converter</h1>
+                <p class="banner-subtitle">CONVERT • CALCULATE • DECIDE</p>
+              </div>
+
+              <span class="project-number">03</span>
+            </div>
+    
+
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-type">API application</span>
+              <span class="project-status">completed</span>
+            </div>
+
+            <h2>Currency Converter</h2>
+
+            <p>
+              Currency conversion tool that retrieves exchange rates and
+              converts values through a simple user interface.
+            </p>
+
+            <div class="technology-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>REST API</span>
+            </div>
+
+            <a href="file:///C:/Users/heman/OneDrive/Desktop/API%20Project/index.html" class="project-link">
+              Add live demo →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="javascript productivity">
+         <div class="project-banner">
+              <i class="fa-solid fa-piggy-bank"></i>
+
+              <div class="banner-text">
+                <h1 class="banner-title">Expense Tracker</h1>
+                <p class="banner-subtitle">TRACK • SAVE • PROSPER</p>
+              </div>
+
+              <span class="project-number">04</span>
+            </div>
+         
+
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-type">Productivity app</span>
+              <span class="project-status">completed</span>
+            </div>
+
+            <h2>Expense Tracker</h2>
+
+            <p>
+              Expense management application with adding, editing, deleting,
+              searching, filtering, and localStorage support.
+            </p>
+
+            <div class="technology-list">
+              <span>JavaScript</span>
+              <span>LocalStorage</span>
+              <span>CSS</span>
+            </div>
+
+            <a  href="file:///C:/Users/heman/OneDrive/Desktop/Expense%20Tracker/index.html" class="project-link">
+              Add live demo →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="javascript productivity">
+           <div class="project-banner">
+              <i class="fa-brands fa-earlybirds"></i>
+
+              <div class="banner-text">
+                <h1 class="banner-title">TaskManager</h1>
+                <p class="banner-subtitle">PLAN • ACT • ACHIEVE</p>
+              </div>
+
+              <span class="project-number">05</span>
+            </div>
+
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-type">Productivity app</span>
+              <span class="project-status">completed</span>
+            </div>
+
+            <h2>Task Manager</h2>
+
+            <p>
+              Task management application with search, filters, sorting,
+              priorities, completion tracking, statistics, dark mode, and
+              localStorage.
+            </p>
+
+            <div class="technology-list">
+              <span>JavaScript</span>
+              <span>LocalStorage</span>
+              <span>Responsive CSS</span>
+            </div>
+
+            <a href="file:///C:/Users/heman/OneDrive/Desktop/Task%20Manager/index.html" class="project-link">
+              Add live demo →
+            </a>
+          </div>
+        </article>
+
+         <article class="project-card" data-category="javascript productivity">
+            <div class="project-banner">
+               <i class="fa-solid fa-brain"></i>
+
+              <div class="banner-text">
+                <h1 class="banner-title">Quiz Application</h1>
+                <p class="banner-subtitle">PLAY • LEARN • IMPROVE</p>
+              </div>
+
+              <span class="project-number">06</span>
+            </div>
+
+         
+
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-type">Productivity app</span>
+              <span class="project-status">completed</span>
+            </div>
+
+            <h2>Quiz Application</h2>
+
+            <p>
+             Built a webBased quiz platform using HTML, CSS, and JavaScript that fetches multipleChoice questions from an
+             API, implements a timer, progress tracking, and scoring logic, and stores high scores/history in localStorage for
+             replay analysis.
+            </p>
+
+            <div class="technology-list">
+              <span>JavaScript</span>
+              <span>REST API</span>
+              <span>LocalStorage</span>
+              <span>Responsive CSS</span>
+            </div>
+
+            <a href="file:///C:/Users/heman/OneDrive/Desktop/Quiz%20Application/index.html" class="project-link">
+              Add live demo →
+            </a>
+          </div>
+
+        </article>
+        
+      <article class="project-card" data-category="javascript productivity">
+             <div class="project-banner">
+              <i class="fa-brands fa-studiovinari logo-icon"></i>
+
+              <div class="banner-text">
+                <h1 class="banner-title">MegaBlog</h1>
+                <p class="banner-subtitle">WRITE • SHARE • GROW</p>
+              </div>
+
+              <span class="project-number">07</span>
+            </div>
+
+
+
+
+
+              <div class="project-content">
+              <div class="project-header">
+              <span class="project-type">Productivity app</span>
+              <span class="project-status">completed</span>
+            </div>
+
+            <h2>MegaBlog</h2>
+
+            <p>
+            MegaBlog is a full-stack blogging application built with React, Redux, 
+            Tailwind CSS, Appwrite, TinyMCE, and Vercel. Users can sign up, log in, 
+            create, edit, delete, and read blog posts with rich text content and image uploads.
+            </p>
+
+            <div class="technology-list">
+              <span>JavaScript</span>
+                  <span>react</span>
+                  <span>vite</span>
+                  <span>appwrite</span>
+                  <span>redux</span>
+                  <span>tailwindcss</span>
+                  <span>tinymce</span>
+                  <span>vercel</span>
+                  <span>blog-app</span>
+                  <span>react-router</span>
+                  <span>javascript</span>
+                  <span>frontend</span>
+                  <span>full-stack-project</span>
+            </div>
+
+           <a href="https://app-write-mega-blog-l8pb.vercel.app/" target="_blank" class="project-link">
+  Live Demo →
+</a>
+
+          </div>
+          </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Ravi Kumar. Built with HTML, CSS &amp; JavaScript.</p>
+       
+    </footer>
+  </div>
 </body>
 </html>
